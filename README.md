@@ -14,6 +14,21 @@ openssl ecparam -name prime256v1 -genkey -noout -out ecdsa_private_key.pem
 
 Derive the public key from the private key 
 
+openssl ec -in ecdsa_private_key.pem -pubout -out ecdsa_public_key.pem
+
+## REQUIREMENTS
+
+npm install express
+npm install jsonwebtoken
+npm install fs
+
+## RUN APPLICATION
+
+node ./app.js
+
+## ROUTES
+/api/login -> will return a token that is used to authenticate the request, fos example you will get 
+
 
 Resources:
 
@@ -21,4 +36,3 @@ Resources:
 
  - https://assets.ctfassets.net/2ntc334xpx65/o5J4X472PQUI4ai6cAcqg/13a2611de03b2c8edbd09c3ca14ae86b/jwt-handbook-v0_14_1.pdf
 
-openssl ec -in ecdsa_private_key.pem -pubout -out ecdsa_public_key.pem
