@@ -27,7 +27,14 @@ npm install fs
 node ./app.js
 
 ## ROUTES
-/api/login -> will return a token that is used to authenticate the request, fos example you will get 
+- POST: /api/login -> will return a token that is used to authenticate the request, for example you will get token
+
+  ![alt text](https://github.com/MiguelBenalcazar/jwtAuthentication/blob/main/logintoken.PNG)
+
+- GET: /api/test -> you will need to add to the header " Authentication: bearer token ", for example:
+
+ ![alt text](https://github.com/MiguelBenalcazar/jwtAuthentication/blob/main/testToken.PNG)
+
 
 
 Resources:
